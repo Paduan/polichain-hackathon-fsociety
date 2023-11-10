@@ -9,7 +9,7 @@ export default function App() {
   const [currentAccount, setCurrentAccount] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const [allWaves, setAllWaves] = useState([]);
-  const contractAddress = "0x99a3eF186cEee6D1ef3E89fb355837F7F576aF6F";
+  const contractAddress = "0xd8Dfeee2341455Eb86d07eA3971AE16220c2953F";
   const contractABI = abi.abi;
 
   /*
@@ -122,17 +122,17 @@ export default function App() {
         const wavePortalContract = new ethers.Contract(contractAddress, contractABI, signer);
 
         let count = await wavePortalContract.getTotalWaves();
-        console.log("Recuperado o número de tchauzinhos...", count.toNumber());
+        console.log("Membros ativos", count.toNumber());
 
-        const messageToSend = userMessage || "esta e uma mensagem padrao"; // Mensagem padrão se não houver mensagem personalizada
+        const messageToSend = userMessage || "membro sem identificação"; // Mensagem padrão se não houver mensagem personalizada
 
         const waveTxn = await wavePortalContract.wave(messageToSend);
-        console.log("Minerando...", waveTxn.hash);
+        console.log("Minerando:", waveTxn.hash);
         await waveTxn.wait();
-        console.log("Minerado -- ", waveTxn.hash);
+        console.log("Minerado: ", waveTxn.hash);
 
         count = await wavePortalContract.getTotalWaves();
-        console.log("Total de tchauzinhos recuperado...", count.toNumber());
+        console.log("Total de membros atualizado", count.toNumber());
       } else {
         console.log("Objeto Ethereum não encontrado!");
       }
@@ -167,7 +167,7 @@ export default function App() {
             
 
             
-            <button class="button-85" role="button" onClick={wave} >join club</button>
+            <button className="button-85" role="button" onClick={wave} >join club</button>
               
             
           </>
