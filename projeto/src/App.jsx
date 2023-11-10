@@ -176,7 +176,7 @@ export default function App() {
         {/* Se não existir uma conta conectada, exibe o botão para conectar a carteira */}
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
-            Conectar carteira
+            Credencial
           </button>
         )}
       </div>
