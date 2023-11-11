@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'MrRobot'; 
-  src: url('../public\fonts\Mrrobot-g123.ttf'); 
+  src: url('../public/fonts/Mrrobot-g123.ttf'); 
 }
 
 @font-face {
   font-family: 'teste'; 
-  src: url('../public\fonts\Evil Empire.otf'); 
+  src: url('../public/fonts/Evil Empire.otf'); 
 }
 
 body {
