@@ -39,7 +39,7 @@ export default function App() {
       const { ethereum } = window;
 
       if (!ethereum) {
-        alert("MetaMask encontrada!");
+        alert("MetaMask não encontrada!");
         return;
       }
 
@@ -125,7 +125,7 @@ export default function App() {
                 type="text"
                 value={userMessage}
                 onChange={(e) => setUserMessage(e.target.value)}
-                placeholder="Sua mensagem"
+                placeholder="nick"
                 style={{ margin: '0', padding: '6px', width: '50%', textAlign: 'center', fontSize: '17px' }}
               />
             </div>
