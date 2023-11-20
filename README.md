@@ -1,6 +1,6 @@
-# polichain-hackathon-fsociety
+# polichain hackathon fsociety
 
 ```
 Back-end: contrato inteligente
-Front-end: interação com o contrato
+Front-end: assinatura e validação
 ```
