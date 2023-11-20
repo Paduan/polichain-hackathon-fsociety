@@ -1,0 +1,62 @@
+/* Estilo do container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question-container p {
+  max-width: 120%; /* Ou um valor específico que funcione para o seu layout */
+  text-align: center;
+  word-wrap: break-word; /* Para quebrar textos muito longos */
+}
+
+.question-container p {
+  text-align: center;
+}
+
+/* Estilo das caixas de texto */
+.input-box {
+  margin: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo do botão */
+.confirm-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.message {
+  min-height: 50px; /* Reserva espaço para a mensagem */
+  visibility: hidden; /* Inicialmente oculta */
+}
+
+.message.visible {
+  visibility: visible; /* Torna visível quando necessário */
+}
+
+.header {
+  text-align: center;
+}
+
+.header-image {
+  max-width: 50%;
+  height: auto;
+}
