@@ -10,7 +10,7 @@ function App() {
   const [message, setMessage] = useState(''); // Armazena a mensagem atual
   const [showMessage, setShowMessage] = useState(false); // Controla a visibilidade da mensagem
 
-  const correctAnswer1 = 'resposta1';
+  const correctAnswer1 = 'polichain';
   const correctAnswer2 = '1372 1656 776';
 
   const checkAnswers = () => {
@@ -19,7 +19,7 @@ function App() {
       setShowMessage(true);
       setInput1('');
       setInput2('');
-      setTimeout(() => setShowMessage(false), 3000); // Mensagem desaparece após 10 segundos
+      setTimeout(() => setShowMessage(false), 3000); // Mensagem desaparece após 3 segundos
         //redireciona pro site
       window.location.href = "https://polichain-hackathon-fsociety-3.vercel.app/";
     } else {
@@ -27,7 +27,7 @@ function App() {
       setShowMessage(true);
       setInput1('');
       setInput2('');
-      setTimeout(() => setShowMessage(false), 3000); // Mensagem desaparece após 10 segundos
+      setTimeout(() => setShowMessage(false), 3000); // Mensagem desaparece após 3 segundos
     }
   };
 
@@ -38,7 +38,7 @@ function App() {
       </header>
 
       <div className="question-container">
-        <p>3a7bd3e2360a3d29ee6e6480d9c2e7b0247b4b7e2da6911919550c74db49deb1</p>
+        <p>cG9saWNoYWlu</p>
         <input 
           type="text" 
           value={input1} 
