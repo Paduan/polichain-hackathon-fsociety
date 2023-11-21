@@ -142,6 +142,7 @@ export default function App() {
             <div>Tempo: {new Date(allMembers[allMembers.length - 1].timestamp).toString()}</div>
             <div>Nick: {allMembers[allMembers.length - 1].message}</div>
             <div>Total de Membros: {allMembers.length}</div>
+            <a href="https://discord.gg/qMn4q9d8" style={{ color: '#ffffff' }}>Junte-se a nós no Discord</a>
           </div>
         )}
 

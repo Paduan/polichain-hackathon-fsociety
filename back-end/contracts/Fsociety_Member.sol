@@ -15,8 +15,6 @@ contract MemberPortal {
     Member[] members;
 
     constructor() {
-        // O construtor está vazio, mas é mantido aqui para demonstração.
-        // Pode ser removido se não houver lógica de inicialização.
     }
 
     function join(string memory _message) public {
