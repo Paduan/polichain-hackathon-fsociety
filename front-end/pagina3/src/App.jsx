@@ -125,7 +125,7 @@ export default function App() {
                 type="text"
                 value={userMessage}
                 onChange={(e) => setUserMessage(e.target.value)}
-                placeholder="nick"
+                placeholder="nickname"
                 style={{ margin: '0', padding: '6px', width: '50%', textAlign: 'center', fontSize: '17px' }}
               />
             </div>
@@ -138,11 +138,11 @@ export default function App() {
 
         {allMembers.length > 0 && (
           <div style={{ backgroundColor: "#000000", marginTop: "16px", padding: "8px" }}>
-            <div>Endereço: {allMembers[allMembers.length - 1].address}</div>
-            <div>Tempo: {new Date(allMembers[allMembers.length - 1].timestamp).toString()}</div>
-            <div>Nick: {allMembers[allMembers.length - 1].message}</div>
-            <div>Total de Membros: {allMembers.length}</div>
-            <a href="https://discord.gg/qMn4q9d8" style={{ color: '#ffffff' }}>Junte-se a nós no Discord</a>
+            <div>endereço: {allMembers[allMembers.length - 1].address}</div>
+            <div>horário: {new Date(allMembers[allMembers.length - 1].timestamp).toString()}</div>
+            <div>nickname: {allMembers[allMembers.length - 1].message}</div>
+            <div>total de membros: {allMembers.length}</div>
+            <a href="https://discord.gg/qMn4q9d8" style={{ color: '#ffffff' }}>junte-se a nós</a>
           </div>
         )}
 

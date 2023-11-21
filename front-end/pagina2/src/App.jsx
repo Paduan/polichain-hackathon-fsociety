@@ -40,7 +40,7 @@ function App() {
       <div className="question-container">
         <p>cG9saWNoYWlu</p>
         <input 
-          type="text" 
+          type="password" 
           value={input1} 
           onChange={(e) => setInput1(e.target.value)} 
           className="input-box"
@@ -50,7 +50,7 @@ function App() {
       <div className="question-container">
         <p>Problem solve genius</p>
         <input 
-          type="text" 
+          type="password" 
           value={input2} 
           onChange={(e) => setInput2(e.target.value)} 
           className="input-box"
