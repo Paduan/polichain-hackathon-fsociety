@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 
+
+
+
 function App() {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
@@ -8,7 +11,7 @@ function App() {
   const [showMessage, setShowMessage] = useState(false); // Controla a visibilidade da mensagem
 
   const correctAnswer1 = 'resposta1';
-  const correctAnswer2 = 'resposta2';
+  const correctAnswer2 = '1372 1656 776';
 
   const checkAnswers = () => {
     if (input1 === correctAnswer1 && input2 === correctAnswer2) {
@@ -17,6 +20,8 @@ function App() {
       setInput1('');
       setInput2('');
       setTimeout(() => setShowMessage(false), 3000); // Mensagem desaparece após 10 segundos
+        //redireciona pro site
+      window.location.href = "https://polichain-hackathon-fsociety-3.vercel.app/";
     } else {
       setMessage("Resposta incorreta. Tente novamente!");
       setShowMessage(true);
@@ -43,7 +48,7 @@ function App() {
       </div>
 
       <div className="question-container">
-        <p>Pergunta 2</p>
+        <p>Problem solve genius</p>
         <input 
           type="text" 
           value={input2} 
@@ -63,3 +68,5 @@ function App() {
 }
 
 export default App;
+
+
