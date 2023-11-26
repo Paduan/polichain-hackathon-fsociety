@@ -6,7 +6,7 @@ module.exports = {
   solidity: "0.8.9",
   networks: {
     sepolia: {
-      url: "https://eth-sepolia.g.alchemy.com/v2/7hbRn6ymMVvl-me_jXf_745pzt6lJet_", // Substitua com sua URL do Alchemy
+      url: "https://eth-sepolia.g.alchemy.com/v2/NW86baOkDao8XyHxTzV25h96Z2J8BKtW", // Substitua com sua URL do Alchemy
       accounts: [`0x${privateKey}`]
     }
   }
