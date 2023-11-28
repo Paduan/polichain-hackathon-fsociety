@@ -237,7 +237,7 @@ export default function App() {
               </div>
             ))}
             <div>Total de membros: {allMembers.length}</div>
-            <a href="https://discord.gg/qMn4q9d8" style={{ color: '#ffffff' }}>Junte-se a nós</a>
+            <a href="https://discord.gg/GQ97KmJbEX" style={{ color: '#ffffff' }}>Junte-se a nós</a>
           </div>
         )}
 
